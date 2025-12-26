@@ -1,0 +1,576 @@
+[
+       {
+              "name": "Arm Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Spinning to the (?<direction>\\S+) as you draw \\S+ \\S+ from its sheath, you unleash a precise slash across (?<victim>\\S+)'s arms\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', f'Arm Slash {direction} (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Balance Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Taking a half step forward, you draw \\S+ \\S+ and unleash a forceful slash that drives (?<victim>\\S+) back\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Balance Slash (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Bleeding Given",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You flourish your blade as it slices through \\S+ skin, sending blood arcing through the air\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Bleeding (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Brokenstar Failed",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You discern that your target is not sufficiently weakened to unleash your wrath.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Brokenstar (Failed)')"
+       },
+       {
+              "name": "Centre Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^In a single motion, you draw \\S+ \\S+ from its scabbard and loose a vicious \\S+ slash at (?<victim>\\S+)'s (?<limb>.*)\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', f'Centre Slash {limb} (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Compass Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Whispering a prayer to the \\S+ winds, you draw \\S+ \\S+ and unleash a slash towards (?<victim>\\S+)'s (?<limb>.+)\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', f'Compass Slash {limb} (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Draw Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "3",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With expert precision, you draw \\S+ \\S+ from its scabbard and unleash a vicious slash towards (?<victim>\\S+)\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Draw Slash (Two Arts)', matches.victim)",
+              "children": [
+                     {
+                            "name": "Limb Hit",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "Your blade bites deep into",
+                                          "type": "startOfLine"
+                                   }
+                            ],
+                            "script": "deleteLine()"
+                     }
+              ]
+       },
+       {
+              "name": "Impale",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You draw your blade back and plunge it deep into the body of (?<victim>\\S+) impaling \\S+ to the hilt\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Impale (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Impale Missed",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You thrust your blade towards (?<victim>\\S+) but \\S+ dodges easily out of the way\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Impale Missed (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Impale Writhe",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With a look of agony on \\S+ face, (?<victim>\\S+) manages to writhe \\S+ free of the weapon which impaled \\S+\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg(matches.victim, 'Writhed Impale')"
+       },
+       {
+              "name": "Impale Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^\\S+ \\S+ steady in your grip, you drag its razor edge across arteries within (?<victim>\\S+)'s abdomen\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Impale Slash (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Infuse Gag",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You tap into your reserves of shin, channeling it into your blade.",
+                            "type": "exactMatch"
+                     },
+                     {
+                            "pattern": "Your blade is already empowered with that infusion.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "deleteLine()"
+       },
+       {
+              "name": "Infuse Earth Hit",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Your blow is bolstered by the power of the earth.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Earth Infusion Hit')"
+       },
+       {
+              "name": "Infuse Fire Hit [Weariness]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Flames engulf (?<victim>\\S+)'s skin\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Fire Infusion (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Infuse Lightning Hit [Clumsiness]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Minute bolts of lightning arc across (?<victim>\\S+)'s skin\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Lightning Infusion (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Infused Earth",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Your blade trembles with pent up power.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Infused Earth (Two Arts)')"
+       },
+       {
+              "name": "Infused Fire",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Your scabbard grows hot against your hip.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Infused Fire (Two Arts)')"
+       },
+       {
+              "name": "Infused Ice",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "Hoarfrost forms around your hand as your scabbard grows as cold as ice.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Infused Ice (Two Arts)')"
+       },
+       {
+              "name": "Infused Lightning",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "The crackle of electrical energy emanates from your scabbard.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Infused Lightning (Two Arts)')"
+       },
+       {
+              "name": "Infused Void",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "You feel a pang of emptiness as a writhing shadow flickers across your scabbard.",
+                            "type": "exactMatch"
+                     }
+              ],
+              "script": "cmsg('You', 'Infused Void (Two Arts)')"
+       },
+       {
+              "name": "Leg Slash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With a smooth lunge to the (?<direction>\\S+), you draw \\S+ \\S+ from its scabbard and deliver a powerful slash across (?<victim>\\S+)'s legs\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', f'Legslash {direction} (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Multislash",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "3",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With masterful technique, you draw \\S+ \\S+ from its scabbard and unleash three precise strikes towards (?<victim>\\S+)\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Multislash (Two Arts)', matches.victim)",
+              "children": [
+                     {
+                            "name": "Blade Slice Gag",
+                            "isActive": "yes",
+                            "isFolder": "no",
+                            "multiline": "no",
+                            "multilineDelta": "0",
+                            "matchall": "no",
+                            "filter": "no",
+                            "fireLength": "0",
+                            "highlight": "no",
+                            "highlightFG": "#ff0000",
+                            "highlightBG": "#ffff00",
+                            "patterns": [
+                                   {
+                                          "pattern": "The blade slices effortlessly",
+                                          "type": "startOfLine"
+                                   }
+                            ],
+                            "script": "cmsg('You', 'Multislash (Two Arts)', matches.victim)"
+                     }
+              ]
+       },
+       {
+              "name": "Discern Levels",
+              "isActive": "yes",
+              "isFolder": "yes",
+              "script": ""
+       },
+       {
+              "name": "Multislash Miss",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^The blade slices through the air, clear of \\S+ flesh\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Multislash Miss (Two Arts)')"
+       },
+       {
+              "name": "Pommelstrike",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^As you draw \\S+ \\S+ from its scabbard, you drive the pommel into (?<victim>\\S+)'s chin\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Pommelstrike (Two Arts)', matches.victim)"
+       },
+       {
+              "name": "Sheathed Sword",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With a sibilant 'shhhiiiinnngggt!', you smoothly sheathe \\S+ \\S+\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Sheathed Sword')"
+       },
+       {
+              "name": "Withdraw",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With a snarl of contempt, you allow (?<victim>\\S+) to slide free of your weapon\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Withdraw (Two Arts)', matches.victim)"
+       }
+]
