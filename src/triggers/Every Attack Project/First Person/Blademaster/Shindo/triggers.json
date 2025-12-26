@@ -1,0 +1,142 @@
+[
+    {
+            "name": "Airfist",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^Freeing your mind to the unpredictable dance of the wind, you hurl a blow towards (?<victim>\\S+)\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Airfist (Shindo)', matches.victim)"
+    },
+    {
+            "name": "Annihilation",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^Drawing rage and fury within your mind into a single bright point, you spark ablaze the Shin energy surrounding you. Fiery warmth caresses your limbs, growing hotter and hotter, until you unleash the firestorm in an explosion of blazing heat\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', ' Annihilation (Shindo)')"
+    },
+    {
+            "name": "Burst",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You unleash a burst of Shin energy at (?<victim>\\S+), rupturing \\S+ flesh\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Burst (Shindo)', matches.victim)"
+    },
+    {
+            "name": "Flamefist",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^Sparking an inferno in your mind's eye, you lash at (?<victim>\\S+) with a blazing fist\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Flamefist (Shindo)', matches.victim)"
+    },
+    {
+            "name": "Gained Shin",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                                "pattern": "^You feel the subtle power of Shindo flowing within you\\.$",
+                                "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Gained Shin (Shindo)')"
+    },
+    {
+            "name": "Icefist",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                {
+                            "pattern": "^Purging yourself of heat, you strike at (?<victim>\\S+) with glacial force\\.$",
+                            "type": "regex"
+                }
+            ],
+            "script": "cmsg('You', 'Icefist (Shindo)', matches.victim)"
+    },
+        {
+            "name": "Thunderstorm",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                                "pattern": "^(?<victim>\\S+)'s body stiffens rapidly with paralysis\\.$",
+                                "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Thunderstorm (Shindo)', matches.victim)"
+    }
+]

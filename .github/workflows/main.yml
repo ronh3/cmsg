@@ -14,6 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Read package version
+        id: pkg
+        run: |
+          VERSION=$(jq -r '.version' mfile)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
       - name: Muddle
         uses: demonnic/build-with-muddler@main
       
@@ -21,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         id: upload
         with:
-          name: cmsg
+          name: cMsg-${{ steps.pkg.outputs.version }}
           path: build/tmp/
       
       - name: Post Artifact
@@ -31,5 +37,5 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           body: |-
             ## Build preview
-            Download the link [here](${{ steps.upload.outputs.artifact_url }}) 
-            [badge]: https://img.shields.io/badge/Build-Success!-3fb950?logo=github&style=for-the-badge
+            You can get it [here](${{ steps.upload.outputs.artifact-url }})
+            ![badge](https://img.shields.io/badge/Build-Success!-3fb950?logo=github&style=for-the-badge)

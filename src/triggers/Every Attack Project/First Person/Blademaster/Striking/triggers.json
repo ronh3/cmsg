@@ -1,0 +1,442 @@
+[
+       {
+              "name": "Chest - [Hypochondria]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With rapid precision, you aim first a punch then a spearhand blow at two points on (?<victim>\\S+)'s chest\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Chest (Striking), matches.victim)"
+       },
+       {
+              "name": "Chin - [Sleep]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Stepping in close, you strike upwards at a precise point below (?<victim>\\S+)'s chin\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Chin (Striking), matches.victim)"
+       },
+       {
+              "name": "Deathstrike Finish",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Completing your fatal assault, you thrust at a vulnerable point of (?<victim>\\S+)'s jugular with a penetrative, spearhand strike. Weakened by your previous blow, \\S+ artery ruptures, and blood begins to leak from \\S+ nose and mouth. Muscles failing as a death rattle rolls across \\S+ lips, \\S+ falls backwards, dead before \\S+ hits the ground\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Deathstrike Finish (Striking), matches.victim)"
+       },
+       {
+              "name": "Deathstrike Middle",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Leaping forwards with lightning speed, you strike (?<victim>\\S+) in the chest with a single, precise blow. Skipping a beat in the wake of your attack, the rhythm of \\S+ heart begins to fluctuate erratically\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Deathstrike Middle (Striking), matches.victim)"
+       },
+       {
+              "name": "Deathstrike Start",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Gathering your energy as you ready yourself for a deadly assault, you size up your \\S+ opponent\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Deathstrike Start (Striking), matches.victim)"
+       },
+       {
+              "name": "Ears - [Clumsiness]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Lashing out with open palms, you box (?<victim>\\S+)'s ears\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Ears (Striking), matches.victim)"
+       },
+       {
+              "name": "Eyes - [Confusion]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With pinpoint strikes to (?<victim>\\S+)'s sockets, you burst blood vessels in \\S+ eyes, causing them to run red\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Eyes (Striking), matches.victim)"
+       },
+       {
+              "name": "Groin - [Recklessness]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Targeting a vulnerable point, you lash out at (?<victim>\\S+)'s groin with a calculated strike.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Groin (Striking), matches.victim)"
+       },
+       {
+              "name": "Hamstring",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Ducking behind \\S+, you strike at (?<victim>\\S+)'s hamstring with a rigid, practised grip\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Hamstring (Striking), matches.victim)"
+       },
+       {
+              "name": "Hamstring Cured",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^(?<victim>\\S+) seems able to move more freely all of a sudden\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg(matches.victim, 'Hamstring Cured (Striking)')"
+       },
+       {
+              "name": "Hands",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Lunging forward with practised grace, you strike at the back of (?<victim>\\S+)'s .*\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Hands (Striking), matches.victim)"
+       },
+       {
+              "name": "Kidneys - [Addiction]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Dancing behind \\S+ with a neat sidestep, you strike at (?<victim>\\S+)'s kidney with a balled fist\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Kidneys (Striking), matches.victim)"
+       },
+       {
+              "name": "Knees - [Dismount]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With preternatural grace, you dart to the side of (?<victim>\\S+)'s mount\\. Grabbing \\S+ ankle from the stirrup, you execute a precise twist, sending \\S+ tumbling from the saddle\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Knees Dismount (Striking)', matches.victim)"
+       },
+       {
+              "name": "Knees - [Prone]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Sweeping out with a blade hand, you strike at the back of (?<victim>\\S+)'s knee\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Knees Prone (Striking)', matches.victim)"
+       },
+       {
+              "name": "Neck - [Paralysis]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With fluid motions of your iron fingers, you strike precisely at pressure points on (?<victim>\\S+)'s neck\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Neck (Striking)', matches.victim)"
+       },
+       {
+              "name": "Nose - [Disloyalty]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With the heel of your palm, you send a pulverising blow at (?<victim>\\S+)'s nose\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Nose (Striking)', matches.victim)"
+       },
+       {
+              "name": "Shoulder - [Weariness]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With a fluid motion, you aim a blow just below (?<victim>\\S+)'s shoulder\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Shoulder (Striking)', matches.victim)"
+       },
+       {
+              "name": "Sternum - [Damage]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Lashing out with a clenched fist, you aim a precise strike at (?<victim>\\S+)'s sternum\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Sternum (Striking)', matches.victim)"
+       },
+       {
+              "name": "Stomach - [Anorexia]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^You aim a measured blow at (?<victim>\\S+)'s stomach, feeling muscles clench beneath your fist\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Stomach (Striking)', matches.victim)"
+       },
+       {
+              "name": "Temple - [Stupidity]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^Striking \\S+ temple with a clenched fist, you leave (?<victim>\\S+) reeling\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Temple (Striking)', matches.victim)"
+       },
+       {
+              "name": "Throat - [Asthma]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With iron fingers, you aim a darting strike at a weak point on (?<victim>\\S+)'s throat\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Throat (Striking)', matches.victim)"
+       },
+       {
+              "name": "Underarm - [Slickness]",
+              "isActive": "yes",
+              "isFolder": "no",
+              "multiline": "no",
+              "multilineDelta": "0",
+              "matchall": "no",
+              "filter": "no",
+              "fireLength": "0",
+              "highlight": "no",
+              "highlightFG": "#ff0000",
+              "highlightBG": "#ffff00",
+              "patterns": [
+                     {
+                            "pattern": "^With a swift, snaking strike, you thrust upwards at (?<victim>\\S+)'s unprotected armpit\\.$",
+                            "type": "regex"
+                     }
+              ],
+              "script": "cmsg('You', 'Underarm (Striking)', matches.victim)"
+       }
+]
