@@ -1,0 +1,486 @@
+[
+    {
+            "name": "Agony Proc",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "A surge of power runs from your weapon into your arm, driving out weakness.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Agony Proc (Oppression)')"
+    },
+    {
+            "name": "Cripple",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "",
+                        "type": "regex"
+                    }
+            ],
+            "script": ""
+    },
+    {
+            "name": "Gravehands Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "The grisly hands of the grave withdraw back beneath the earth.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Gravehands Down (Oppression)')"
+    },
+    {
+            "name": "Gravehands Proc",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^The hands of the grave seize (?<victim>\\S+), preventing \\S+ escape\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Gravehands Proc (Oppression)', matches.victim)"
+    },
+    {
+            "name": "Gravehands Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "Grisly skeletal hands thrust upwards from beneath the earth, clawing at the living.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Gravehands Up (Oppression)')"
+    },
+    {
+            "name": "Hellforge Anguish Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "The burning heat emanating from your armour fades.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Anguish Down (Oppression)')"
+    },
+    {
+            "name": "Hellforge Anguish Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "Your armour grows painfully hot, the fires of the Inferno turning inward to shield you.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Anguish Up (Oppression)')"
+    },
+    {
+            "name": "Hellforge Bloodlust Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "You feel your wrath receding as the red haze lifts.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Bloodlust Down (Oppression)')"
+    },
+    {
+            "name": "Hellforge Bloodlust Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "The red haze descends upon you as you give yourself over to the subjugation of the weak.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Bloodlust Up (Oppression)')"
+    },
+    {
+            "name": "Hellforge Conqueror Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "Your drive to subjugate the weak regresses to normal levels.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Conqueror Down (Oppression)')"
+    },
+    {
+            "name": "Hellforge Conqueror Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "The weak shall serve beneath the whip and all shall bend the knee.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Conqueror (Oppression)')"
+    },
+    {
+            "name": "Hellforge Pitiless Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "You feel the pitiless vengeance of Evil recede.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Pitiless Down (Oppression)')"
+    },
+    {
+            "name": "Hellforge Pitiless Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "The pitiless fury of Evil descends upon you.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Pitiless Up (Oppression)')"
+    },
+    {
+            "name": "Hellforge Relentless Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "Your relentless drive regresses to less extreme levels.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Relentless Down(Oppression)')"
+    },
+    {
+            "name": "Hellforge Relentless Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "Your relentless drive for the dominion of the one true Lord consumes you.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Hellforge: Relentless (Oppression)')"
+    },
+    {
+            "name": "Infestation Down",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "You coax the maggots to return to the depths with the lure of freshly decaying corpses.",
+                        "type": "exactMatch"
+                    },
+                    {
+                        "pattern": "The ground churns as the grotesque maggots writhing across it wriggle furiously, digging downwards and quickly disappearing beneath the earth.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Infestation Down (Oppression)')"
+    },
+    {
+            "name": "Infestation Proc",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You sense through your malignant connection to your infestation that (?<victim>\\S+) has been cursed with (?<affliction>.+)\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', f'Infestation: {matches.affliction} (Oppression)', matches.victim)"
+    },
+    {
+            "name": "Infestation Up",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "You utter a low chant and watch as hundreds of sickly white maggots dig their way out of the earth, squirming over one another to spread out across the ground in a putrid mass.",
+                        "type": "exactMatch"
+                    }
+            ],
+            "script": "cmsg('You', 'Infestation Up (Oppression)')"
+    },
+    {
+            "name": "Invested Exploit",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You invest necromantic energies into .*, preparing to exploit .*$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', f'Invested: Exploit (Oppression)')"
+    },
+    {
+            "name": "Invested Torment",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You invest necromantic energies into .*, preparing to torment .*$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', f'Invested: Torment (Oppression)')"
+    },
+    {
+            "name": "Invested Torture",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You invest necromantic energies into .*, preparing to corrupt .*$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', f'Invested: Torture (Oppression)')"
+    },
+    {
+            "name": "Quash",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You wreathe your hand in black lightning, unleashing a savage blow to the whelp (?<victim>\\S+)\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Quash (Oppression)', matches.victim)"
+    },
+    {
+            "name": "Vivisect Fail",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^You reach out for (?<victim>\\S+)'s chest but are unable to penetrate it\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Vivisect: Fail (Oppression)', matches.victim)"
+    },
+    {
+            "name": "Vivisect Success",
+            "isActive": "yes",
+            "isFolder": "no",
+            "multiline": "no",
+            "multilineDelta": "0",
+            "matchall": "no",
+            "filter": "no",
+            "fireLength": "0",
+            "highlight": "no",
+            "highlightFG": "#ff0000",
+            "highlightBG": "#ffff00",
+            "patterns": [
+                    {
+                        "pattern": "^Drawing on the power of undeath, you wreathe your hand in black, crackling energy. With a diabolical laugh, you stiffen your hand and slowly run it down (?<victim>\\S+)'s chest, splitting it open as you do so. With an expert touch, you rip apart \\S+ innards, causing a maximum of horrifying pain, and, enjoying the spectacle of \\S+ writhing and screaming in agony, you rip out \\S+ sternum and drive it through \\S+ splayed body, pinning \\S+ to the ground to die\\.$",
+                        "type": "regex"
+                    }
+            ],
+            "script": "cmsg('You', 'Vivisect: Success (Oppression)', matches.victim)"
+    }
+]

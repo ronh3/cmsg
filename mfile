@@ -2,7 +2,7 @@
        "package": "cMSG",
        "title": "cMSG - The Every Attack Project",
        "description": "This is a Mudlet package that seeks to capture every attack message in Achaea. Our goal is to shorten every message down to its critical components: Who did it, what it was, and who it was done to. As desired, this can be extended by the user.",
-       "version": "0.1.0",
+       "version": "0.1.1",
        "author": "The Mourners",
        "icon": "",
        "dependencies": "",
